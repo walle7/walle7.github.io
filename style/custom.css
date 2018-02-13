@@ -1,16 +1,26 @@
+html {
+  height: 100%;
+  margin-top: -90px;
+}
+
 header nav {
 	height: 60px;
 }
 
+.morebtn{
+  margin-left: 40%;
+  margin-top: 50px
+}
+
 .img {
-	background-image: url("../img/cloud.jpg");
+	background-image: url("../img/water.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 100px;
 	z-index: 10;
 	width: 100%;
 	height: 40%;
-	color: white;
+	color: black;
 
 }
 .navbar 	{
@@ -32,30 +42,12 @@ img {
 	float: right;
 }
 
-/*.VIEW1 {
-  font-size: 1.1em;
-  float: right;
-  width: 170px;
-  background-color: transparent;
-  color: #red;
-  margin-right: 50%;*/
-}
-/*.VIEW2 {
-  font-size: 1.1em;
-  float: right;
-  width: 150px;
-  background-color: transparent;
-  color: #fff;
-  margin-right: 50%;
-  margin-bottom: 40%;*/
 }
 
 #skill {
     
     font-family: 'Teko', sans-serif;
   padding-top: 60px;
-  width: 100%;
-  width: 100vw;
   height: 550px;
   background: #ffffff; /* fallback for old browsers */
   /*background: -webkit-linear-gradient(to left, #3a6186 , #89253e);  Chrome 10-25, Safari 5.1-6 
@@ -78,11 +70,86 @@ img {
   background: linear-gradient(to left, #3a6186 , #89253e);*/ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color : #red;    
 }
+/*portfolio images*/
+ #port img{
+    width: 504px;
+    height: 636px;
+    padding: 10px;
+    margin-left: 100px;
+ }
+
+/*start of rating*/
+
+/* http://www.jquery2dotnet.com/ */
+#rate {
+  margin-left: 30%;
+}
+body{ margin-top:20px;}
+.glyphicon { margin-right:5px;}
+.rating .glyphicon {font-size: 22px;}
+.rating-num { margin-top:0px;font-size: 54px; }
+.progress { margin-bottom: 5px;}
+.progress-bar { text-align: left; }
+.rating-desc .col-md-3 {padding-right: 0px;}
+.sr-only { margin-left: 5px;overflow: visible;clip: auto; }
+
+body {
+  padding-top: 70px;
+}
+.btn-grey{
+    background-color:#D8D8D8;
+  color:#FFF;
+}
+.rating-block{
+  background-color:#FAFAFA;
+  border:1px solid #EFEFEF;
+  padding:15px 15px 20px 15px;
+  border-radius:3px;
+}
+.bold{
+  font-weight:700;
+}
+.padding-bottom-7{
+  padding-bottom:7px;
+}
+
+.review-block{
+  background-color:#FAFAFA;
+  border:1px solid #EFEFEF;
+  padding:15px;
+  border-radius:3px;
+  margin-bottom:15px;
+}
+.review-block-name{
+  font-size:12px;
+  margin:10px 0;
+}
+.review-block-date{
+  font-size:12px;
+}
+.review-block-rate{
+  font-size:13px;
+  margin-bottom:15px;
+}
+.review-block-title{
+  font-size:15px;
+  font-weight:700;
+  margin-bottom:10px;
+}
+.review-block-description{
+  font-size:13px;
+}
+.img-rounded {
+  height: 50px;
+}
+/*End of rating*/
 
 
 
-/*skills section*/
-.progress{
+
+
+
+.col-md-3 .progress{
     width: 150px;
     height: 150px;
     line-height: 150px;
@@ -91,7 +158,7 @@ img {
     box-shadow: none;
     position: relative;
 }
-.progress:after{
+.col-md-3 .progress:after{
     content: "";
     width: 100%;
     height: 100%;
@@ -101,7 +168,7 @@ img {
     top: 0;
     left: 0;
 }
-.progress > span{
+.col-md-3 .progress > span{
     width: 50%;
     height: 100%;
     overflow: hidden;
@@ -109,10 +176,10 @@ img {
     top: 0;
     z-index: 1;
 }
-.progress .progress-left{
+.col-md-3 .progress .progress-left{
     left: 0;
 }
-.progress .progress-bar{
+.col-md-3 .progress .progress-bar{
     width: 100%;
     height: 100%;
     background: none;
@@ -121,7 +188,7 @@ img {
     position: absolute;
     top: 0;
 }
-.progress .progress-left .progress-bar{
+.col-md-3 .progress .progress-left .progress-bar{
     left: 100%;
     border-top-right-radius: 80px;
     border-bottom-right-radius: 80px;
@@ -129,10 +196,10 @@ img {
     -webkit-transform-origin: center left;
     transform-origin: center left;
 }
-.progress .progress-right{
+.col-md-3 .progress .progress-right{
     right: 0;
 }
-.progress .progress-right .progress-bar{
+.col-md-3 .progress .progress-right .progress-bar{
     left: -100%;
     border-top-left-radius: 80px;
     border-bottom-left-radius: 80px;
@@ -141,7 +208,7 @@ img {
     transform-origin: center right;
     animation: loading-1 1.8s linear forwards;
 }
-.progress .progress-value{
+.col-md-3 .progress .progress-value{
     width: 90%;
     height: 90%;
     border-radius: 50%;
@@ -154,40 +221,40 @@ img {
     top: 5%;
     left: 5%;
 }
-.progress.blue .progress-bar{
+.col-md-3 .progress.blue .progress-bar{
     border-color: #049dff;
 }
-.progress.blue .progress-left .progress-bar{
+.col-md-3 .progress.blue .progress-left .progress-bar{
     animation: loading-2 1.5s linear forwards 1.8s;
 }
-.progress.yellow .progress-bar{
+.col-md-3 .progress.yellow .progress-bar{
     border-color: #fdba04;
 }
-.progress.yellow .progress-left .progress-bar{
+.col-md-3 .progress.yellow .progress-left .progress-bar{
     animation: loading-3 1s linear forwards 1.8s;
 }
-.progress.pink .progress-bar{
+.col-md-3 .progress.pink .progress-bar{
     border-color: #ed687c;
-}
-.progress.pink .progress-left .progress-bar{
+ }
+.col-md-3 .progress.pink .progress-left .progress-bar{
     animation: loading-4 0.4s linear forwards 1.8s;
 }
-.progress.green .progress-bar{
+.col-md-3 .progress.green .progress-bar{
     border-color: #1abc9c;
 }
-.progress.green .progress-left .progress-bar{
+.col-md-3 .progress.green .progress-left .progress-bar{
     animation: loading-5 1.2s linear forwards 1.8s;
 }
-.progress.purple .progress-bar{
+.col-md-3 .progress.purple .progress-bar{
     border-color: #1abc9c;
 }
-.progress.purple .progress-left .progress-bar{
+.col-md-3 .progress.purple .progress-left .progress-bar{
     animation: loading-6 0.6s linear forwards 1.8s;
 }
-.progress.red .progress-bar{
+.col-md-3 .progress.red .progress-bar{
     border-color: #00FF00;
 }
-.progress.red .progress-left .progress-bar{
+.col-md-3 .progress.red .progress-left .progress-bar{
     animation: loading-7 1.3s linear forwards 1.8s;
 }
 @keyframes loading-1{
@@ -245,8 +312,8 @@ img {
         transform: rotate(0deg);
     }
     100%{
-        -webkit-transform: rotate(126deg);
-        transform: rotate(126deg);
+        -webkit-transform: rotate(130deg);
+        transform: rotate(130deg);
     }
 }@keyframes loading-7{
     0%{
@@ -259,19 +326,11 @@ img {
     }
 }
 @media only screen and (max-width: 990px){
-    .progress{ margin-bottom: 20px; }
+    .col-md-3 .progress{ margin-bottom: 20px; }
 }
 /*end of skills section*/
 
-/*  rating http://www.jquery2dotnet.com/ */
-body { margin-top:20px;}
-.glyphicon { margin-right:5px;}
-.rating .glyphicon {font-size: 22px;}
-.rating-num { margin-top:0px;font-size: 54px; }
-.progress-1 { margin-bottom: 5px;}
-.progress-bar-2 { text-align: left; }
-.rating-desc .col-md-3 {padding-right: 0px;}
-.sr-only { margin-left: 5px;overflow: visible;clip: auto; }
+
 
 /*Contact sectiom*/
 .content-header{
@@ -329,6 +388,11 @@ textarea.form-control {
   background-color: transparent;
   color: #fff;
 
+}
+
+#contact .well{
+    margin-top:30px;
+    border-radius:0;
 }
 /*end contact section*/
 
